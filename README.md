@@ -38,7 +38,7 @@ I wanted to schedule the machine to turn off and on every day, and this seems to
 
 The main issue to resolve was how to start up the artwork when the computer started up. For this I went with creating a .plist file that ran a shell script. 
 
-The plist file looks like this:
+The .plist file looks like this:
 
 ````xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -58,6 +58,11 @@ The plist file looks like this:
 
 ````
 Setting the working directory was key to making sure the commands in the shell script executed correctly.
+
+IMPORTANT:
+- The filename should be the same as the Label string, in my case `com.user.loginscript` and the filename `com.user.loginscript.plist`
+- The file should be saved in `/Users/<username>/Library/LaunchAgents`
+- Upon restart you should see a notification related to login items and the shell script should appear in the System Settings UI for Login Items
 
 The shell script looks like this: 
 
