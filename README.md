@@ -28,7 +28,7 @@ Given these requirements, I will now detail how I set up the hardware and softwa
 
 ### hardware and operating system
 
-I chose a Mac Mini M1 with macos 14.x for the installation. This means that the guide I posted above is already a bit out of date, since it was written in 2012. Features have ben dropped, moved, or obscured in the macos ui. The guide was still very very helpful to know the important settings to tweak, and when I could not find them, I would verify their removal or find where they were. If the feature was removed, I found a workaround.
+I chose a Mac Mini M1 with macos 14.x for the installation. This means that the guide I posted above is already a bit out of date, since it was written in 2012. Features have been dropped, moved, or obscured in the macos ui. The guide was still very very helpful to know the important settings to tweak, and when I could not find them, I would verify their removal or find where they were. If the feature was removed, I found a workaround.
 
 I followed the ["Prepare the Computer"](https://github.com/laserpilot/Installation_Up_4evr?tab=readme-ov-file#prepare-the-computer) section as closely as possible to ensure that any notifications were suppressed
 
@@ -120,7 +120,7 @@ setTimeout(function(){
 
 If I added it into the frame.html it would loose fullscreen. Maybe there are better ways to go about it, but this works.
 
-How did I get firefox to go full screen programatically? I haf to set the `full-screen-api.allow-trusted-requests-only` flag in `about:config` to **false**. 
+How did I get firefox to go full screen programatically? I had to set the `full-screen-api.allow-trusted-requests-only` flag in `about:config` to **false**. 
 
 Note: firefox is set to be the default browser on the system, so when webpack starts to serve, it opens firefox.
 
